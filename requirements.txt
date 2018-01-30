@@ -1,7 +1,6 @@
-doorstop
 mkdocs
 mkdocs-material
 jupyter
 notebook
-
+graphiz
 pyyaml

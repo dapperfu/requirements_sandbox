@@ -14,6 +14,7 @@ ${VENV}: requirements.txt
 	@python3 -mvenv ${@}
 	@${VENV_BIN}/pip.exe install --upgrade pip setuptools wheel
 	@${VENV_BIN}/pip.exe install --upgrade --requirement requirements.txt
+	@${VENV_BIN}/pip.exe install -e doorstop/
 
 .PHONY: nb
 nb:
