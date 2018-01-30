@@ -1,0 +1,3 @@
+[submodule "doorstop"]
+	path = doorstop
+	url = git@github.com:jed-frey/doorstop.git
