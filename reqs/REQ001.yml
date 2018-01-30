@@ -1,0 +1,12 @@
+active: true
+derived: false
+header: The Header
+level: 1.0
+links: []
+normative: true
+ref: ''
+reviewed: f2effff309ff2ab96053633f5d18d5c5
+text: |
+  This is the heading
+
+  This is some text that goes into chapter 1.1.0.

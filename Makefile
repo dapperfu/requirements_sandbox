@@ -15,6 +15,10 @@ ${VENV}: requirements.txt
 	@${VENV_BIN}/pip.exe install --upgrade pip setuptools wheel
 	@${VENV_BIN}/pip.exe install --upgrade --requirement requirements.txt
 
+.PHONY: nb
+nb:
+	@cd DevelopmentNotebooks && @${VENV_BIN}/jupyter notebook
+	
 PHONY: clean
 clean:
 	@git clean -xfd

@@ -1,4 +1,7 @@
 @ECHO OFF
+call .venv\Scripts\activate.bat
 doorstop create REQ ./reqs
 doorstop add REQ
-doorstop edit REQ1
+doorstop create TST ./reqs/tests --parent REQ
+
+pause
