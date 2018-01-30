@@ -1,14 +1,24 @@
-# Python targets
-VENV = .venv
+VENV ?= .venv
+
+# OS Detection
+ifeq ($(OS),Windows_NT)
+    VENV_BIN := ${VENV}/Scripts
+else
+    VENV_BIN := ${VENV}/bin
+endif
 
 .PHONY: venv
 venv: ${VENV}
 
-${VENV}:
-	python3 -mvenv ${@}
+${VENV}: requirements.txt
+	@python3 -mvenv ${@}
+	@${VENV_BIN}/pip.exe install --upgrade pip setuptools wheel
+	@${VENV_BIN}/pip.exe install --upgrade --requirement requirements.txt
 
-.PHONY: pip
-pip: ${VENV}
-	${VENV}/bin/pip install -U pip setuptools wheel
-	${VENV}/bin/pip install -U -r requirements.txt
+PHONY: clean
+clean:
+	@git clean -xfd
 
+requirements.txt:
+	@echo 'requirements.txt' is missing.
+	@exit 1

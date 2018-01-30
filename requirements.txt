@@ -1,1 +1,5 @@
 doorstop
+mkdocs
+mkdocs-material
+jupyter
+notebook
