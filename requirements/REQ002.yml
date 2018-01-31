@@ -1,8 +1,14 @@
 active: true
 derived: false
+header: |
+  Frontend
+invented-by: some.guy2@email.com
 level: 1.1
 links: []
 normative: true
 ref: ''
-reviewed: null
-text: ''
+reviewed: 2efb7e0f9a47e7a647f40a95dbc44e15
+text: |
+  Functional Frontend
+
+  The project **shall** have a functional frontend.

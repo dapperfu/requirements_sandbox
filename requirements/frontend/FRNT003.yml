@@ -2,8 +2,9 @@ active: true
 derived: false
 level: 1.2
 links:
-- REQ002: null
+- REQ002: 2efb7e0f9a47e7a647f40a95dbc44e15
 normative: true
 ref: ''
-reviewed: null
-text: ''
+reviewed: 2ed43c5c85d81a8b0cc25fff182a7f06
+text: |
+  Frontend requirement 3 **shall**
