@@ -5,6 +5,6 @@ links:
 - REQ002: 2efb7e0f9a47e7a647f40a95dbc44e15
 normative: true
 ref: ''
-reviewed: 2ed43c5c85d81a8b0cc25fff182a7f06
+reviewed: cd38552ed2bbed60c4099ec6ce8a3aae
 text: |
   Frontend requirement 3 **shall**

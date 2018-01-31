@@ -24,10 +24,6 @@ PHONY: clean
 clean:
 	@git clean -xfd
 	
-PHONY: review
-review:
-	@${VENV_BIN}/doorstop review
-
 requirements.txt:
 	@echo 'requirements.txt' is missing.
 	@exit 1
