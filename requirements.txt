@@ -2,5 +2,5 @@ mkdocs
 mkdocs-material
 jupyter
 notebook
-graphiz
+graphviz 
 pyyaml

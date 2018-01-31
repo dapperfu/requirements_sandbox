@@ -18,7 +18,7 @@ ${VENV}: requirements.txt
 
 .PHONY: nb
 nb:
-	@cd DevelopmentNotebooks && @${VENV_BIN}/jupyter notebook
+	@${VENV_BIN}/jupyter-notebook
 	
 PHONY: clean
 clean:
